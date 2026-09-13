@@ -1,0 +1,19 @@
+# Ignore Word documents and temporary files
+*.docx
+~$*.docx
+~*.tmp
+*.pdf
+
+# Ignore text files and markdown (results, drafts)
+*.txt
+*.md
+
+# Ignore temporary scripts created during analysis
+explore.py
+reorder_xml.py
+read_docx.py
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
