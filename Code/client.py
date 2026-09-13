@@ -5,8 +5,8 @@ from cryptoHandlers import get_client_pubkey, client_decapsulate
 
 HOST = '127.0.0.1'
 PORT = 65432
-ALGO = 'RSA'  # Options: 'RSA', 'ECDH', 'ML-KEM'
-ITERATIONS = 1000
+ALGO = 'ML-KEM'  # Options: 'RSA', 'ECDH', 'ML-KEM'
+ITERATIONS = 200
 OS_BASELINE_MS = 0.0858  # Your calculated loopback median
 
 def run_client():
@@ -44,7 +44,7 @@ def run_client():
             
         except Exception as e:
             failures += 1
-            # print(f"  [!] Handshake {i} failed: {e}")
+            print(f"  [!] Handshake {i} failed: {e}")
 
     # Final Output
     if latencies:

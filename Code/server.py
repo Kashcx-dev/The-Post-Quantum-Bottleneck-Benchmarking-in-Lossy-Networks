@@ -3,7 +3,7 @@ from cryptoHandlers import server_encapsulate
 
 HOST = '127.0.0.1'
 PORT = 65432
-ALGO = 'RSA'  # Options: 'RSA', 'ECDH', 'ML-KEM'
+ALGO = 'ML-KEM'  # Options: 'RSA', 'ECDH', 'ML-KEM'
 
 def run_server():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
